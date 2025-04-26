@@ -455,6 +455,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7171133523371415532, guid: 2ddfb80504b44cd448937e244e2195f5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 859369295}
+    - targetCorrespondingSourceObject: {fileID: 7171133523371415532, guid: 2ddfb80504b44cd448937e244e2195f5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 859369300}
   m_SourcePrefab: {fileID: 100100000, guid: 2ddfb80504b44cd448937e244e2195f5, type: 3}
 --- !u!1 &832575517
 GameObject:
@@ -628,6 +631,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.51, y: 2.9, z: 5.55}
   m_Center: {x: -0.010108113, y: 1.52, z: -0.45}
+--- !u!114 &859369300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859369294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b86d89aa23f7647ba1cdc6719363f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _volumeChangeStep: 0.05
+  _volumeChangeDelay: 0.05
 --- !u!1 &1779762199
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,8 +750,8 @@ GameObject:
   - component: {fileID: 1895291464}
   - component: {fileID: 1895291463}
   - component: {fileID: 1895291462}
-  - component: {fileID: 1895291461}
   - component: {fileID: 1895291460}
+  - component: {fileID: 1895291466}
   m_Layer: 0
   m_Name: Thief
   m_TagString: Untagged
@@ -755,14 +772,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
---- !u!81 &1895291461
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895291459}
-  m_Enabled: 1
 --- !u!136 &1895291462
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -854,6 +863,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1895291466
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895291459}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
